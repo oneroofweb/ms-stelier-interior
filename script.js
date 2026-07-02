@@ -28,6 +28,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Close menu when clicking the close button
+    const closeBtn = document.querySelector('.close-menu');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            hamburgerBtn.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
+    }
+
     // --- Scroll to Explore Logic ---
     const scrollExploreBtn = document.getElementById('scrollExploreBtn');
     if (scrollExploreBtn) {
@@ -45,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- Reusable Infinite Carousel Logic ---
-    function initInfiniteCarousel(trackId, containerSelector, isLogoCarousel = false) {
+    function initInfiniteCarousel(trackId, containerSelector, isLogoCarousel = false, desktopItems = 3) {
         const track = document.getElementById(trackId);
         const container = document.querySelector(containerSelector);
         
@@ -81,13 +90,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (window.innerWidth <= 768) {
                     slideWidth = (containerWidth - gap) / 2;
                 } else {
-                    slideWidth = (containerWidth - (gap * 2)) / 3;
+                    slideWidth = (containerWidth - (gap * (desktopItems - 1))) / desktopItems;
                 }
             } else {
                 if (window.innerWidth <= 768) {
                     slideWidth = (containerWidth - gap) / 1.5;
                 } else {
-                    slideWidth = (containerWidth - (gap * 2)) / 3;
+                    slideWidth = (containerWidth - (gap * (desktopItems - 1))) / desktopItems;
                 }
             }
             
@@ -191,6 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initInfiniteCarousel('featuredTrack', '.featured-carousel-container', false);
     initInfiniteCarousel('pressTrack', '.press-carousel-container', true);
     initInfiniteCarousel('processTrack', '.process-carousel-container', false);
+    initInfiniteCarousel('btsTrack', '.bts-carousel-container', false, 5);
 
     // --- Accordion Logic ---
     const accordionItems = document.querySelectorAll('.accordion-item');

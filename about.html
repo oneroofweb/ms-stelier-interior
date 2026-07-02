@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Atelier Interiors - About</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar dark-nav solid-nav">
+        <div class="logo">
+            <a href="index.html">
+                <h2>MS ATELIER</h2>
+                <p>INTERIORS</p>
+            </a>
+        </div>
+        <div class="nav-links">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <a href="index.html">
+                        <h2>MS ATELIER</h2>
+                        <p>INTERIORS</p>
+                    </a>
+                </div>
+                <button class="close-menu">&times;</button>
+            </div>
+            <a href="project.html">PROJECTS</a>
+            <a href="services.html">SERVICES</a>
+            <a href="process.html">PROCESS</a>
+            <a href="about.html" class="active-link">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <button class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+        </button>
+    </nav>
+
+    <!-- About the Designer -->
+    <section class="about-hero"
+        style="display: flex; min-height: 100vh; background-color: var(--bg-color); flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px; display: flex; justify-content: flex-end; padding: 12rem 5% 4rem 5%;">
+            <div style="max-width: 600px; width: 100%; display: flex; flex-direction: column; justify-content: center;">
+                <p class="section-subtitle">ABOUT THE DESIGNER</p>
+                <h2 style="font-family: var(--font-heading); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 400; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">Hello, I'm Muskan.<br>The mind behind<br>MS Atelier.</h2>
+                <div class="text-divider"
+                    style="margin: 2rem 0; width: 40px; height: 1px; background-color: var(--text-dark);"></div>
+                <p class="desc" style="margin-bottom: 1.5rem; max-width: none;">Design, for me, is not just about
+                    creating beautiful spaces—it's about crafting experiences, evoking emotions and enhancing the way
+                    people live.</p>
+                <p class="desc" style="margin-bottom: 1.5rem; max-width: none;">What started as a simple love for
+                    aesthetics slowly turned into a purpose—to design spaces that feel personal, timeless and deeply
+                    intentional.</p>
+                <p class="desc" style="margin-bottom: 2.5rem; max-width: none;">Today, through MS Atelier, I get to do
+                    what I love every single day—turning ideas and dreams into spaces that truly reflect who you are.
+                </p>
+                <div class="signature"
+                    style="font-family: 'Caveat', cursive; font-size: 3.5rem; color: var(--text-dark); line-height: 1; transform: rotate(-3deg);">
+                    Muskan</div>
+            </div>
+        </div>
+        <div
+            style="flex: 1.2; min-width: 300px; display: flex; align-items: center; justify-content: center; padding: 12rem 5% 4rem 0;">
+            <img src="assets/feat_1.jpg" alt="Muskan"
+                style="width: 100%; max-width: 600px; aspect-ratio: 1/1; object-fit: cover;">
+        </div>
+    </section>
+
+    <!-- My Design Philosophy -->
+    <section class="about-philosophy"
+        style="display: flex; min-height: 100vh; background-color: var(--white); flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px; display: flex; justify-content: flex-end; padding: 6rem 5% 6rem 5%;">
+            <div style="max-width: 600px; width: 100%; display: flex; flex-direction: column; justify-content: center;">
+                <p class="section-subtitle">MY DESIGN PHILOSOPHY</p>
+                <h2>Intentional by design.<br>Timeless by soul.</h2>
+                <div class="text-divider"
+                    style="margin: 2rem 0; width: 40px; height: 1px; background-color: var(--text-dark);"></div>
+                <p class="desc" style="margin-bottom: 1.5rem; max-width: none;">I believe great design is a balance of
+                    aesthetics, function and emotion. Every project begins with listening, understanding and connecting
+                    the dots between your story and your space.</p>
+                <p class="desc" style="max-width: none;">I don't follow trends, I create timeless spaces that evolve
+                    with you.</p>
+            </div>
+        </div>
+        <div
+            style="flex: 1.2; min-width: 300px; display: flex; align-items: center; justify-content: center; padding: 6rem 5% 6rem 0;">
+            <img src="assets/mat_6.jpg" alt="Design Philosophy"
+                style="width: 100%; max-width: 600px; aspect-ratio: 1/1; object-fit: cover;">
+        </div>
+    </section>
+
+    <!-- Behind the Scenes -->
+    <section class="about-bts section-padding"
+        style="background-color: var(--bg-color); border-top: 1px solid var(--border-color);">
+        <div class="container">
+            <p class="section-subtitle">BEHIND THE SCENES</p>
+            <div class="bts-carousel-container" style="margin-top: 3rem; overflow: hidden; position: relative;">
+                <div class="carousel-track" id="btsTrack">
+                    <div class="bts-item" style="text-align: center;">
+                        <img src="assets/proc_1.jpg" alt="Site Visits"
+                            style="aspect-ratio: 1/1.1; margin-bottom: 1.5rem; height: auto; pointer-events: none;">
+                        <p class="section-subtitle" style="margin-bottom: 0;">SITE VISITS</p>
+                    </div>
+                    <div class="bts-item" style="text-align: center;">
+                        <img src="assets/proc_2.jpg" alt="Sketches"
+                            style="aspect-ratio: 1/1.1; margin-bottom: 1.5rem; height: auto; pointer-events: none;">
+                        <p class="section-subtitle" style="margin-bottom: 0;">SKETCHES</p>
+                    </div>
+                    <div class="bts-item" style="text-align: center;">
+                        <img src="assets/proc_3.jpg" alt="Moodboards"
+                            style="aspect-ratio: 1/1.1; margin-bottom: 1.5rem; height: auto; pointer-events: none;">
+                        <p class="section-subtitle" style="margin-bottom: 0;">MOODBOARDS</p>
+                    </div>
+                    <div class="bts-item" style="text-align: center;">
+                        <img src="assets/proc_4.jpg" alt="Designing"
+                            style="aspect-ratio: 1/1.1; margin-bottom: 1.5rem; height: auto; pointer-events: none;">
+                        <p class="section-subtitle" style="margin-bottom: 0;">DESIGNING</p>
+                    </div>
+                    <div class="bts-item" style="text-align: center;">
+                        <img src="assets/ig_5.jpg" alt="Installation"
+                            style="aspect-ratio: 1/1.1; margin-bottom: 1.5rem; height: auto; pointer-events: none;">
+                        <p class="section-subtitle" style="margin-bottom: 0;">INSTALLATION</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="about-quote section-padding" style="background-color: var(--white);">
+        <div class="container" style="text-align: center; max-width: 900px;">
+            <h2
+                style="font-size: clamp(2rem, 3vw, 3.5rem); line-height: 1.3; font-weight: 400; color: var(--text-dark);">
+                Every space has a story.<br>I'm here to help you tell yours&mdash;beautifully.
+            </h2>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" style="display: flex; flex-wrap: wrap; padding: 0; background-color: var(--bg-color);">
+        <div style="flex: 1; min-width: 300px; height: 200px;">
+            <img src="assets/hero_bg.jpg" alt="Vase interior" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div
+            style="flex: 1; min-width: 300px; height: 200px; display: flex; align-items: center; justify-content: center; padding: 0 10%; background-color: var(--bg-color);">
+            <div style="width: 100%; max-width: 450px;">
+                <p class="section-subtitle"
+                    style="letter-spacing: 0.1em; color: var(--text-dark); margin-bottom: 1rem;">LET'S CREATE SOMETHING
+                    MEANINGFUL TOGETHER.</p>
+                <a href="contact.html" class="link-arrow cta-red-link" style="margin-top: 0;">START YOUR PROJECT
+                    &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-layout">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <h2>MS ATELIER</h2>
+                    <p>INTERIORS</p>
+                </a>
+            </div>
+            <div class="footer-contact">
+                <p>hello@msatelier.com</p>
+                <p>+91 12345 67890</p>
+            </div>
+            <div class="footer-social">
+                <a href="#">INSTAGRAM</a>
+                <a href="#">PINTEREST</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; MS ATELIER INTERIORS</p>
+                <p>ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTopBtn" aria-label="Scroll to top">
+        &uarr;
+    </button>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <!-- Call -->
+        <a href="tel:+911234567890" class="fab-btn" title="Call Us">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/911234567890" class="fab-btn" title="WhatsApp Us" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <!-- Direction -->
+        <a href="https://maps.google.com/?q=Gomti+Nagar,Lucknow" class="fab-btn" title="Get Directions" target="_blank">
+            <i class="fa-solid fa-location-dot"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

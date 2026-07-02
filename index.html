@@ -12,22 +12,34 @@
     
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <!-- Navigation -->
     <nav class="navbar">
         <div class="logo">
-            <h2>MS ATELIER</h2>
-            <p>INTERIORS</p>
+            <a href="index.html">
+                <h2>MS ATELIER</h2>
+                <p>INTERIORS</p>
+            </a>
         </div>
         <div class="nav-links">
-            <a href="#projects">PROJECTS</a>
-            <a href="#services">SERVICES</a>
-            <a href="#process">PROCESS</a>
-            <a href="#about" class="active-link">ABOUT</a>
-            <a href="#journal">JOURNAL</a>
-            <a href="#contact">CONTACT</a>
+            <div class="sidebar-header">
+                <div class="logo">
+                    <a href="index.html">
+                        <h2>MS ATELIER</h2>
+                        <p>INTERIORS</p>
+                    </a>
+                </div>
+                <button class="close-menu">&times;</button>
+            </div>
+            <a href="project.html">PROJECTS</a>
+            <a href="services.html">SERVICES</a>
+            <a href="process.html">PROCESS</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
         </div>
         <button class="hamburger-menu">
             <div class="line"></div>
@@ -45,7 +57,7 @@
             <div class="text-divider"></div>
             <p>We create bespoke residential and commercial interiors that blend functionality, elegance and emotion.</p>
             <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">START YOUR PROJECT</a>
+                <a href="contact.html" class="btn btn-primary">START YOUR PROJECT</a>
                 <a href="#projects" class="btn btn-outline">VIEW PORTFOLIO</a>
             </div>
             <div class="scroll-indicator" id="scrollExploreBtn" role="button" tabindex="0">
@@ -257,8 +269,10 @@
     <footer>
         <div class="container footer-layout">
             <div class="footer-logo">
-                <h2>MS ATELIER</h2>
-                <p>INTERIORS</p>
+                <a href="index.html">
+                    <h2>MS ATELIER</h2>
+                    <p>INTERIORS</p>
+                </a>
             </div>
             <div class="footer-contact">
                 <p>hello@msatelier.com</p>
@@ -279,6 +293,22 @@
     <button class="scroll-to-top" id="scrollToTopBtn" aria-label="Scroll to top">
         &uarr;
     </button>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <!-- Call -->
+        <a href="tel:+911234567890" class="fab-btn" title="Call Us">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/911234567890" class="fab-btn" title="WhatsApp Us" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <!-- Direction -->
+        <a href="https://maps.google.com/?q=Gomti+Nagar,Lucknow" class="fab-btn" title="Get Directions" target="_blank">
+            <i class="fa-solid fa-location-dot"></i>
+        </a>
+    </div>
 
     <script src="script.js"></script>
 </body>
