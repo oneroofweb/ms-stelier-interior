@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Atelier Interiors</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h2>MS ATELIER</h2>
+            <p>INTERIORS</p>
+        </div>
+        <div class="nav-links">
+            <a href="#projects">PROJECTS</a>
+            <a href="#services">SERVICES</a>
+            <a href="#process">PROCESS</a>
+            <a href="#about" class="active-link">ABOUT</a>
+            <a href="#journal">JOURNAL</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+        <button class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="assets/hero_bg.jpg" alt="Luxury Living Room Interior">
+        </div>
+        <div class="hero-content">
+            <h1>Luxury Interiors.<br>Thoughtfully Designed.<br><span>Beautifully Lived.</span></h1>
+            <div class="text-divider"></div>
+            <p>We create bespoke residential and commercial interiors that blend functionality, elegance and emotion.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">START YOUR PROJECT</a>
+                <a href="#projects" class="btn btn-outline">VIEW PORTFOLIO</a>
+            </div>
+            <div class="scroll-indicator" id="scrollExploreBtn" role="button" tabindex="0">
+                <div class="circle-icon">&#8595;</div>
+                <span>SCROLL TO EXPLORE</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project -->
+    <section class="featured-project section-padding" id="projects">
+        <div class="container">
+            <div class="featured-header">
+                <div class="featured-text">
+                    <p class="section-subtitle">FEATURED PROJECT</p>
+                    <h2>Calm. Curated.<br>Timeless.</h2>
+                    <p class="desc">A residence that reflects the personality of its people — warm, minimal and deeply considered.</p>
+                    <a href="#" class="link-arrow">VIEW PROJECT &rarr;</a>
+                </div>
+            </div>
+            <div class="featured-carousel-container">
+                <div class="carousel-track" id="featuredTrack">
+                    <div class="slide"><img src="assets/feat_1.jpg" alt="Living Room"></div>
+                    <div class="slide"><img src="assets/feat_2.jpg" alt="Kitchen"></div>
+                    <div class="slide"><img src="assets/feat_3.jpg" alt="Bedroom"></div>
+                    <div class="slide"><img src="assets/hero_bg.jpg" alt="Interior Details"></div>
+                    <div class="slide"><img src="assets/feat_1.jpg" alt="Living Room Alternate"></div>
+                    <div class="slide"><img src="assets/feat_2.jpg" alt="Kitchen Alternate"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials We Love -->
+    <section class="materials section-padding">
+        <div class="container materials-layout">
+            <div class="materials-header">
+                <p class="section-subtitle" style="font-weight: 600; color: var(--text-dark);">OUR PALETTE</p>
+                <h2>Materials<br>We Love.</h2>
+                <p class="desc">A curated selection of natural textures, rich woods, and organic finishes that bring warmth, depth, and character to our spaces.</p>
+                <a href="#" class="link-arrow hide-mobile">EXPLORE MATERIAL PALETTE &rarr;</a>
+            </div>
+            <div class="materials-grid">
+                <div class="material-item">
+                    <img src="assets/mat_1.jpg" alt="Travertine Stone">
+                    <p>Travertine Stone</p>
+                </div>
+                <div class="material-item">
+                    <img src="assets/mat_2.jpg" alt="Brushed Brass">
+                    <p>Brushed Brass</p>
+                </div>
+                <div class="material-item">
+                    <img src="assets/mat_3.jpg" alt="Fluted Glass">
+                    <p>Fluted Glass</p>
+                </div>
+                <div class="material-item">
+                    <img src="assets/mat_4.jpg" alt="Walnut Wood">
+                    <p>Walnut Wood</p>
+                </div>
+                <div class="material-item">
+                    <img src="assets/mat_5.jpg" alt="Linen Textures">
+                    <p>Linen Textures</p>
+                </div>
+                <div class="material-item">
+                    <img src="assets/mat_6.jpg" alt="Leather Finishes">
+                    <p>Leather Finishes</p>
+                </div>
+            </div>
+            <a href="#" class="link-arrow hide-desktop" style="margin-top: 3rem;">EXPLORE MATERIAL PALETTE &rarr;</a>
+        </div>
+    </section>
+
+    <!-- Design Philosophy -->
+    <section class="philosophy">
+        <div class="container philosophy-layout">
+            <div class="phil-img-1">
+                <img src="assets/phil_1.jpg" alt="Design sketches">
+            </div>
+            <div class="phil-text">
+                <p class="section-subtitle">OUR DESIGN PHILOSOPHY</p>
+                <h2>Spaces that<br>tell your story.</h2>
+                <p>We believe great design is a balance of aesthetics, function and emotion. Every space we create is intentional, timeless and crafted around the way you live.</p>
+                <a href="#" class="link-arrow">OUR APPROACH &rarr;</a>
+            </div>
+            <div class="phil-img-2">
+                <img src="assets/phil_2.jpg" alt="Vase with dry flowers">
+            </div>
+        </div>
+    </section>
+
+    <!-- Press Features -->
+    <section class="press-features">
+        <div class="container press-layout">
+            <div class="press-text-block">
+                <p class="section-subtitle">PRESS / FEATURES<br>(FUTURE)</p>
+                <a href="#" class="link-arrow hide-mobile">VIEW ALL FEATURES &rarr;</a>
+            </div>
+            <div class="press-carousel-container">
+                <div class="press-track" id="pressTrack">
+                    <div class="logo-item logo-elle">ELLE<span>DECOR</span></div>
+                    <div class="logo-item logo-arch">ARCHITECT<span>and INTERIORS</span></div>
+                    <div class="logo-item logo-living">Living<span>etc</span></div>
+                    <div class="logo-item logo-ad">AD</div>
+                    <div class="logo-item logo-anth">design<br>anthology</div>
+                </div>
+            </div>
+        </div>
+        <div class="container hide-desktop" style="text-align: center;">
+            <a href="#" class="link-arrow">VIEW ALL FEATURES &rarr;</a>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="instagram">
+        <div class="container insta-layout">
+            <div class="insta-header">
+                <p class="section-subtitle">INSTAGRAM FEED</p>
+                <a href="#" class="link-underline">FOLLOW @MS_ATELIER_</a>
+            </div>
+            <div class="insta-grid">
+                <img src="assets/ig_1.jpg" alt="Instagram 1">
+                <img src="assets/ig_2.jpg" alt="Instagram 2">
+                <img src="assets/ig_3.jpg" alt="Instagram 3">
+                <img src="assets/ig_4.jpg" alt="Instagram 4">
+                <img src="assets/ig_5.jpg" alt="Instagram 5">
+            </div>
+        </div>
+    </section>
+
+    <!-- Behind the Design -->
+    <section class="process section-padding" id="process">
+        <div class="container split-layout">
+            <div class="featured-header">
+                <p class="section-subtitle">BEHIND THE DESIGN</p>
+                <h2>The journey from<br>concept to creation.</h2>
+                <p class="desc">From moodboards and sketches to site visits and final styling &mdash; here's a peek into our design process.</p>
+                <a href="#" class="link-arrow">EXPLORE THE PROCESS &rarr;</a>
+            </div>
+            
+            <div class="process-carousel-container">
+                <div class="carousel-track" id="processTrack">
+                    <div class="slide"><img src="assets/proc_1.jpg" alt="Concept & Moodboards"></div>
+                    <div class="slide"><img src="assets/proc_2.jpg" alt="Site Visits"></div>
+                    <div class="slide"><img src="assets/proc_3.jpg" alt="In Progress"></div>
+                    <div class="slide"><img src="assets/proc_4.jpg" alt="The Final Reveal"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs & Insights -->
+    <section class="faq-insights section-padding">
+        <div class="container split-layout">
+            <!-- FAQs -->
+            <div class="faqs">
+                <p class="section-subtitle">FAQS</p>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-btn">What services do you offer? <span>+</span></button>
+                        <div class="accordion-content"><p>We offer full-scale residential and commercial interior design services, from concept to completion.</p></div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-btn">How long does a project take? <span>+</span></button>
+                        <div class="accordion-content"><p>Timelines vary based on the scope, but typically range from 3 to 9 months.</p></div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Do you work on customized furniture? <span>+</span></button>
+                        <div class="accordion-content"><p>Yes, we design bespoke furniture pieces tailored to your space and style.</p></div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Can you help with material selection? <span>+</span></button>
+                        <div class="accordion-content"><p>Absolutely. We curate a personalized material palette for every project.</p></div>
+                    </div>
+                </div>
+                <a href="#" class="link-arrow" style="display: block; width: max-content;">VIEW ALL FAQS &rarr;</a>
+            </div>
+            <!-- Insights -->
+            <div class="insights">
+                <p class="section-subtitle">RECENT INSIGHTS</p>
+                <p class="insights-desc">Visit the Journal for more stories.</p>
+                <div class="insights-grid">
+                    <div class="insight-card">
+                        <img src="assets/ins_1.jpg" alt="Earthy Tones">
+                        <h3>Earthy Tones, Timeless Homes</h3>
+                        <p>How natural palettes bring warmth and calm.</p>
+                    </div>
+                    <div class="insight-card">
+                        <img src="assets/ins_2.jpg" alt="Designing Thoughtful Kitchens">
+                        <h3>Designing Thoughtful Kitchens</h3>
+                        <p>Function meets beauty in the heart of the home.</p>
+                </div>
+                <a href="#" class="link-arrow" style="display: block; width: max-content;">VIEW ALL ARTICLES &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <img src="assets/footer_bg.jpg" alt="Dark interior">
+        </div>
+        <div class="cta-content container">
+            <h2>Let's create something<br>meaningful together.</h2>
+            <a href="#contact" class="btn btn-primary cta-btn">START YOUR PROJECT</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-layout">
+            <div class="footer-logo">
+                <h2>MS ATELIER</h2>
+                <p>INTERIORS</p>
+            </div>
+            <div class="footer-contact">
+                <p>hello@msatelier.com</p>
+                <p>+91 12345 67890</p>
+            </div>
+            <div class="footer-social">
+                <a href="#">INSTAGRAM</a>
+                <a href="#">PINTEREST</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; MS ATELIER INTERIORS</p>
+                <p>ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTopBtn" aria-label="Scroll to top">
+        &uarr;
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
